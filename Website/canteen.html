@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>V Cafe</title>
+  <meta charset="utf-8">
+  <link href="css/canteen.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div class="form">
+
+      <form action="contact" id="canteen-form" class="form">
+
+          <div class="form-group">
+            <div class="field">
+              <input  type="text"  placeholder="Enter Name of Dish" class="form-control" name="ItemName" id="ItemName">
+            </div>
+          </br>
+          </div>
+
+          <div class="form-group">
+            <div class="field">
+              <textarea rows="3" cols="50" placeholder="Describe your Dish" class="form-control" name="Description" form="canteen-form">Describe your dish</textarea>
+            </div>
+          </br>
+          </div>
+
+          <div  class="form-group">
+            <div class="field">
+              <input type="text" placeholder="Enter Image Path" class="form-control" name="Image" id="Image">
+            </div>
+            </br>
+          </div>
+
+          <div  class="form-group">
+            <div class="field">
+              <input type="text" placeholder="Cost of dish" class="form-control" name="Cost" id="Cost">
+            </div>
+            </br>
+          </div>
+
+          <div  class="form-group">
+            <div class="field">
+              <input type="text" placeholder="Count Available" class="form-control" name="Availablility" id="Availablity">
+            </div>
+            </br>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-success">Add Item</button>
+          </div>
+
+      </form>
+      </div>
+      <!--<textarea rows="4" cols="50" name="Description" form="canteen-form">Describe your dish</textarea>
+    </br>-->
+
+    </div>
+
+  <!-- Bootstrap core JavaScript -->
+      <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-scrolltofixed-min.js"></script>
+    <script src="js/jquery.vegas.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+  <!-- Slideshow Background  -->
+    <script>
+  $.vegas('slideshow', {
+    delay:5000,
+    backgrounds:[
+       { src:'./images/canteen1.jpg', fade:2000 },
+     { src:'./images/canteen2.jpg', fade:2000 },
+      { src:'./images/canteen3.jpg', fade:2000 },
+     { src:'./images/canteen4.jpg', fade:2000 },
+      { src:'./images/canteen5.jpg', fade:2000 },
+    ]
+  });
+  /*('overlay', {
+  src:'./img/overlay.png'
+  });*/
+    </script>
+  <!-- /Slideshow Background -->
+
+  <!-- Mixitup : Grid -->
+      <script>
+      $(function(){
+      $('#Grid').mixitup();
+        });
+      </script>
+  <!-- /Mixitup : Grid -->
+
+      <!-- Custom JavaScript for Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
+      <script>
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+              || location.hostname == this.hostname) {
+
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+      </script>
+
+
+</body>
+
+</html>

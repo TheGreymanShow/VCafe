@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_getorder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thegreymanshow.vscanner.Getorder">
+
+
+    <Button
+        android:text="Get your Order"
+        android:layout_width="match_parent"
+        android:id="@+id/get"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:elevation="6dp"
+        android:onClick="onClick"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:text="Your Roll Number here "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rollnum"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rollnum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:id="@+id/textView2"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        />
+</RelativeLayout>

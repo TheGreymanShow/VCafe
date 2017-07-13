@@ -1,0 +1,24 @@
+//fetch username and password from database
+/*$rollno = $_POST['RollNo'];
+$password = $_POST['Password'];
+
+//prevent sql injection
+$rollno = stripcslashes["RollNo"];
+$password = stripcslashes["Password"];
+$rollno = mysql_real_escape_string["RollNo"];
+$password = mysql_real_escape_stringc["Password"];*/
+
+/*mysql_connect("localhost","root","");
+mysql_select_db("vcafe");*/
+
+/*$result = mysql_query("Select * from customer where RollNo = '$rollno' and Password = '$password' ") or die("Failed to query database".mysql_error());
+
+$row = mysql_fetch_array($result);
+
+if($row['RollNo'] == $rollno && $row['Password'] == $password)
+{
+  echo "Login Success !";
+}
+else {
+  echo "Login Failed ";
+}*/

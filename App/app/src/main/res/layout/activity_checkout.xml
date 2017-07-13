@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_getorder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thegreymanshow.vscanner.Checkout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+    <Button
+        android:text="Place Order"
+        android:layout_below="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:id="@+id/get"
+        android:layout_height="120dp"
+        android:elevation="6dp"
+        android:onClick="onClick"
+
+        android:layout_margin="10dp"
+        android:textSize="18sp" />
+
+        <Button
+            android:text="Show Checked"
+            android:layout_below="@+id/get"
+            android:layout_width="match_parent"
+            android:id="@+id/show"
+            android:layout_height="120dp"
+            android:elevation="6dp"
+            android:onClick="onClick2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</ScrollView>
